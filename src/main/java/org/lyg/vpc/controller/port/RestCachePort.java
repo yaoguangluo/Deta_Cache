@@ -8,6 +8,8 @@ import javax.ws.rs.POST;
 import static org.lyg.common.constants.DetaDBConstant.DIGIT_60000;
 import static org.lyg.common.constants.DetaDBConstant.DIGIT_ONE;
 import static org.lyg.common.constants.DetaDBConstant.REST_JSON_CONFIG;
+
+import java.util.List;
 @RestController
 public interface RestCachePort {
 	@RequestLimit(count = DIGIT_ONE, time = DIGIT_60000)
@@ -27,5 +29,12 @@ public interface RestCachePort {
 			, @QueryParam("time") String time
 			, @QueryParam("email") String email
 			, @QueryParam("password") String password) throws Exception;
+	
+	@RequestLimit(count = DIGIT_ONE, time = DIGIT_60000)
+	@POST
+	@RequestMapping("/getAskers")
+	@Produces(REST_JSON_CONFIG)
+	List<String> getAskers(@QueryParam("email") String email
+			,@QueryParam("password") String password) throws Exception;
 
 }

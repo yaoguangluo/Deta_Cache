@@ -1,4 +1,5 @@
 package org.lyg.cache;
+import java.util.Iterator;
 import java.util.concurrent.ConcurrentHashMap;
 public class DetaCacheManager {
 	private static ConcurrentHashMap<String, DetaCache> cacheMap = new ConcurrentHashMap<>();
@@ -28,4 +29,8 @@ public class DetaCacheManager {
 		return c.getValue();
 	}
 	
+	@SuppressWarnings("rawtypes")
+	public static Iterator getCacheIterator(){
+		return cacheMap.entrySet().iterator(); 
+	}
 } 
