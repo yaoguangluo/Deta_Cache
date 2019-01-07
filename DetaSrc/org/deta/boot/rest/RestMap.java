@@ -1,7 +1,6 @@
 package org.deta.boot.rest;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -9,7 +8,6 @@ import java.net.URLDecoder;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 public class RestMap {
-	@SuppressWarnings("deprecation")
 	public static void process(String[] type, Socket socket) throws IOException {
 		String[] column = type[1].split("&");
 		Map<String, String> data = new ConcurrentHashMap<>();
@@ -20,15 +18,12 @@ public class RestMap {
 		String output = "";
 		try {
 			output = VPC.forward(type[0], data);
-			OutputStream out = socket.getOutputStream();
-//			out.setCharacterEncoding("utf-8");
-//			out.setContentType("text/html; charset=utf-8");
-			PrintWriter pw=new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(),"UTF-8")),true);
-			
-			//PrintWriter pw = new PrintWriter(socket.getOutputStream(),true);
+			PrintWriter pw=new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket
+					.getOutputStream(),"UTF-8")),true);
 			pw.println("HTTP/1.1 200 OK\n\n"); 
 			output=output.charAt(0)=='"'?output.substring(1,output.length()):output;
-			output=output.charAt(output.length()-1)=='"'?output.substring(0,output.length()-1):output;
+			output=output.charAt(output.length()-1)=='"'?output.substring(0
+					, output.length()-1):output;
 			pw.println(output.replace("\\\"","\""));
 			pw.flush();
 			pw.close();
