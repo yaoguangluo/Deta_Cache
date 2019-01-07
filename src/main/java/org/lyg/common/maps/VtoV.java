@@ -1,19 +1,13 @@
 package org.lyg.common.maps;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.lang.reflect.Type;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
-//import org.jboss.resteasy.spi.HttpRequest;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.XML;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-@SuppressWarnings("unused")
 public class VtoV{
 	public JSONObject XmlToJsonObject(String response ){
 		JSONObject responseJson = XML.toJSONObject(response);
@@ -28,6 +22,16 @@ public class VtoV{
 	}
 
 	public String MapToJsonString(Map<String, Object> response ){
+		Gson gson = new Gson();
+		return gson.toJson(response);
+	}
+	
+	public String ListToJsonString(List<Object> response ){
+		Gson gson = new Gson();
+		return gson.toJson(response);
+	}
+	
+	public String ObjectToJsonString(Object response ){
 		Gson gson = new Gson();
 		return gson.toJson(response);
 	}
@@ -46,5 +50,20 @@ public class VtoV{
 		JSONObject jsonObj = new JSONObject(json);
 		String xml = XML.toString(jsonObj);
 		return xml;	
+	}
+
+	public List<Object> JsonArrayToList(JSONArray jobj) {
+		List<Object> output = new ArrayList<>();
+		for(int i=0; i<jobj.length(); i++){		
+			Object obj = jobj.get(i);
+			if(obj instanceof JSONObject){
+				output.add(JsonObjectToMap(jobj.getJSONObject(i)));
+			}else if(obj instanceof String){
+				output.add(String.valueOf(obj));
+			}else if(obj instanceof JSONArray){
+				output.add(JsonArrayToList(jobj.getJSONArray(i)));
+			}
+		}
+		return output;	
 	}
 }
