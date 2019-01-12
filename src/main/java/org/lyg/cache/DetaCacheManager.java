@@ -11,7 +11,11 @@ public class DetaCacheManager {
 	public static String putCache(String key, String value, long timeOut){
 		DetaCache c = new DetaCache();
 		c.setValue(value);
-		c.setTimeOut(timeOut);
+		if(0 == timeOut && cacheMap.containsKey(key)){
+			c.setTimeOut(cacheMap.get(key).getTimeOut());
+		}else{
+			c.setTimeOut(timeOut);
+		}
 		cacheMap.put(key, c);
 		return "success";
 	}
