@@ -1,3 +1,5 @@
+一个java json rest缓存服务器， 源码20kb，基于启动VPCS HTTP服务器, 启动仅需9毫秒。
+
 # vpc_deta_cache
 新开一个用于缓存vpc部署 并集成了德塔数据库请求UTIL，
 ##### 已完善功能：集成了德塔rest服务器做缓存业务。可springBoot 和 detaBoot 2选1启动。
