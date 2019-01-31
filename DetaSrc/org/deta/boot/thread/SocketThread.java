@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+
 import org.deta.boot.rest.RestMap;
 
 public class SocketThread extends Thread implements Runnable{
@@ -71,4 +72,5 @@ public class SocketThread extends Thread implements Runnable{
 	public String getSid() {
 		return this.sid;
 	}
+
 }
