@@ -2,19 +2,23 @@
 # vpc_deta_cache
 # JDK的不断更新导致hashmap的索引采用2分法思想发挥到极致，所以本deta cache的后序完善将放缓，新的任务本人将基于VPCS的Hall keeper 和运维更有效的交互进行深入研究，设计的研究项目如下
 新开一个用于缓存vpc部署 并集成了德塔数据库请求UTIL，
-##### 已完善功能：集成了德塔rest服务器做缓存业务。可springBoot 和 detaBoot 2选1启动。
-##### 已完善功能：REST请求。
-##### 已完善功能：200 反馈。
-##### 已完善功能：500 反馈。
-##### 已完善功能：restMap。
-##### 已完善功能：restForward。
-##### 已完善功能：每秒1500并发控制。
-##### 已完善功能：json 读写。
-##### 已完善功能：时间设计。
-##### 已完善功能：增加缓存超时更新机制。
-##### 已完善功能：单机 10万 QPS。已测试。
+##### 已完善功能：集成了德塔rest服务器做缓存业务。可springBoot 和 detaBoot 2选1启动。 Mr.Luo
+##### 已完善功能：REST请求。 Mr.Luo
+##### 已完善功能：200 反馈。 Mr.Luo
+##### 已完善功能：500 反馈。 Mr.Luo
+##### 已完善功能：restMap。 Mr.Luo
+##### 已完善功能：restForward。 Mr.Luo
+##### 已完善功能：每秒1500并发控制。 Mr.Luo
+##### 已完善功能：json 读写。 Mr.Luo
+##### 已完善功能：时间设计。 Mr.Luo
+##### 已完善功能：增加缓存超时更新机制。 Mr.Luo
+##### 已完善功能：单机 10万 QPS。已测试。 Mr.Luo
+##### 已完善功能：String to bit 2采用gzip进制快速压缩。 Mr.Luo
 
-##### 正在完善的功能：String to bit 2进制快速压缩。
+##### 正完善功能：restPath=/getServerInfo 运维接口 定义   Mr.Chen
+##### 正完善功能：restPath=/getServerInfo 运维接口 结构   Mr.Chen
+##### 正完善功能：restPath=/getServerInfo 运维接口 研发   Mr.Chen
+
 
 ##### 未完善功能：proxy cache；
 ##### 未完善功能：map 分级序列化索引。
