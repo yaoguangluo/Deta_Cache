@@ -1,5 +1,3 @@
-一个java json rest缓存服务器， 源码20kb，基于VPCS HTTP服务器, 启动仅需9毫秒。
-# vpc_deta_cache
 # JDK的不断更新导致hashmap的索引采用2分法思想发挥到极致，所以本deta cache的后序完善将放缓，新的任务本人将基于VPCS的Hall keeper 和运维更有效的交互进行深入研究，设计的研究项目如下
 新开一个用于缓存vpc部署 并集成了德塔数据库请求UTIL，
 ##### 已完善功能：集成了德塔rest服务器做缓存业务。可springBoot 和 detaBoot 2选1启动。 Mr.Luo
@@ -20,7 +18,6 @@
 ##### 正完善功能：restPath=/getServerInfo 运维接口 定义   Mr.Chen
 ##### 正完善功能：restPath=/getServerInfo 运维接口 结构   Mr.Chen
 ##### 正完善功能：restPath=/getServerInfo 运维接口 研发   Mr.Chen
-
 
 ##### 未完善功能：proxy cache；
 ##### 未完善功能：map 分级序列化索引。
