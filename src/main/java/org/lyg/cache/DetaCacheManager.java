@@ -3,7 +3,6 @@ import java.util.Iterator;
 import java.util.concurrent.ConcurrentHashMap;
 public class DetaCacheManager {
 	private static ConcurrentHashMap<String, DetaCache> cacheMap = new ConcurrentHashMap<>();
-	
 	private DetaCacheManager() {
 		super();
 	}
@@ -22,7 +21,7 @@ public class DetaCacheManager {
 
 	public static String getCache(String key){
 		DetaCache c = cacheMap.get(key);
-		if(null==c){
+		if(null == c){
 			return "unsuccess nofind cache";	
 		}
 		long now = System.currentTimeMillis();

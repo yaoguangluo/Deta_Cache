@@ -18,11 +18,11 @@ public class RestMap {
 		String output = "";
 		try {
 			output = VPC.forward(type[0], data);
-			PrintWriter pw=new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket
+			PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket
 					.getOutputStream(),"UTF-8")),true);
 			pw.println("HTTP/1.1 200 OK\n\n"); 
-			output=output.charAt(0)=='"'?output.substring(1,output.length()):output;
-			output=output.charAt(output.length()-1)=='"'?output.substring(0
+			output = output.charAt(0) == '"'?output.substring(1,output.length()):output;
+			output = output.charAt(output.length()-1) == '"'?output.substring(0
 					, output.length()-1):output;
 			pw.println(output.replace("\\\"","\""));
 			pw.flush();
