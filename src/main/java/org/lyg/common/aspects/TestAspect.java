@@ -65,8 +65,9 @@ public class TestAspect {
 				 Enumeration<String> enumerationOfHeaders = httpServletRequest.getHeaders(headerName);
 				 while(enumerationOfHeaders.hasMoreElements()) {
 					 String temp = enumerationOfHeaders.nextElement();
-					 if(headerName.contains("Cookie")&&temp.contains("ip="))
+					 if(headerName.contains("Cookie")&&temp.contains("ip=")){
 						 ipAgen += temp;
+					 }
 				 }
 			}
 			String url = joinPoint.getTarget().getClass().getName();
