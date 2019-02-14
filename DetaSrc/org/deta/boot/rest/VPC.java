@@ -16,9 +16,14 @@ public class VPC {
 					,  data.get("password")));	
 		}
 		if(string.equalsIgnoreCase("/put")){
-			return new VtoV().ObjectToJsonString(new RestCachePortImpl().put(data.get("key"), data.get("value")
+			return new VtoV().ObjectToJsonString(new RestCacheSerInfImpl().put(data.get("key"), data.get("value")
 					,data.get("time")  , data.get("email"), data.get("password")));	
 		}
+
+        if(string.equalsIgnoreCase("/getSerInf")){
+            return new VtoV().ObjectToJsonString(new RestCacheSerInfImpl().getServerInf(data.get("request"));
+        }
+
 		return "";
 	}
 }
