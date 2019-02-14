@@ -31,7 +31,7 @@ public class VtoV{
 		return gson.toJson(response);
 	}
 	
-	public String ObjectToJsonString(Object response ){
+	public static String ObjectToJsonString(Object response ){
 		Gson gson = new Gson();
 		return gson.toJson(response);
 	}
