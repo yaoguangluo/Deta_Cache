@@ -9,6 +9,7 @@ public class VPC {
 		if(string.equalsIgnoreCase("/111")){
 			return new VtoV().ObjectToJsonString("success");	
 		}
+		System.out.println(string);
 		if(string.contains("/devops")){
 			return DevopsController.exec(string, data);	
 		}

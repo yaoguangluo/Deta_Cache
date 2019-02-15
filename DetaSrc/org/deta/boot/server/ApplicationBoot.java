@@ -51,7 +51,5 @@ public class ApplicationBoot {
 	}
 
 	private void addRestService() {
-		// TODO Auto-generated method stub
-
 	}
 }

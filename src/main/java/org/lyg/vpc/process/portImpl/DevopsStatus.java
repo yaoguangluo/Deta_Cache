@@ -4,11 +4,13 @@ import java.util.List;
 /*
  * 
  *     作者鲁骏。
+ *     罗瑶光进行了功能调通的修改
  * */
 public class DevopsStatus {
 	public Object getServerInf(String token, String  usremail, String usrpswd) {
 		//传送 缓存服务器的状态
 		//获取 现存线程数， 可用内存，最大内存，已用内存，服务器cpu大小，硬盘容量
+		System.out.println(usremail+usrpswd);
 		String countThread= new DevopsUtil().getThreadCount()+"";
 		String usedMemoryUsage=new DevopsUtil().getMemoryRatio();
 		String avaMemoryUsage="";//TODO: 尝试使用sigar.jar计算
@@ -24,6 +26,7 @@ public class DevopsStatus {
 		//					+"/r/n 硬盘容量:" + hardDiskCap;
 		//
 		//		}
+		
 		return "unsuccess";
 	}
 }

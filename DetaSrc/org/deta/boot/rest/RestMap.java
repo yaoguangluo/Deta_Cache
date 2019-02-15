@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 public class RestMap {
 	public static void process(String[] type, Socket socket) throws IOException {
+		System.out.println(122);
 		String[] column = type[1].split("&");
 		Map<String, String> data = new ConcurrentHashMap<>();
 		for(String cell:column){
@@ -17,6 +18,7 @@ public class RestMap {
 		}
 		String output = "";
 		try {
+			System.out.println(123);
 			output = VPC.forward(type[0], data);
 			PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket
 					.getOutputStream(),"UTF-8")),true);
