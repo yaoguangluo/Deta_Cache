@@ -39,7 +39,7 @@ public class ApplicationBoot {
 		boot.init();
 		boot.addRestService();
 		System.out.println("----µÂËþHTTP·þÎñÆ÷----");
-		ExecutorService executorService = Executors.newFixedThreadPool(100);
+		ExecutorService executorService = Executors.newFixedThreadPool(1);
 		while(true) {
 			if(socketThreadPool.getThreadsCount() < 1000){
 				SocketThread clientSocket = new SocketThread(socketThreadPool, server.accept()

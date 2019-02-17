@@ -1,35 +1,38 @@
-ä¸€ä¸ªjava json restç¼“å­˜æœåŠ¡å™¨ï¼Œ æºç 20kbï¼ŒåŸºäºŽVPCS HTTPæœåŠ¡å™¨, å¯åŠ¨ä»…éœ€9æ¯«ç§’ã€‚
-# vpc_deta_cache
-# JDKçš„ä¸æ–­æ›´æ–°å¯¼è‡´hashmapçš„ç´¢å¼•é‡‡ç”¨2åˆ†æ³•æ€æƒ³å‘æŒ¥åˆ°æžè‡´ï¼Œæ‰€ä»¥æœ¬deta cacheçš„åŽåºå®Œå–„å°†æ”¾ç¼“ï¼Œæ–°çš„ä»»åŠ¡æœ¬äººå°†åŸºäºŽVPCSçš„Hall keeper å’Œè¿ç»´æ›´æœ‰æ•ˆçš„äº¤äº’è¿›è¡Œæ·±å…¥ç ”ç©¶ï¼Œè®¾è®¡çš„ç ”ç©¶é¡¹ç›®å¦‚ä¸‹
-æ–°å¼€ä¸€ä¸ªç”¨äºŽç¼“å­˜vpcéƒ¨ç½² å¹¶é›†æˆäº†å¾·å¡”æ•°æ®åº“è¯·æ±‚UTILï¼Œ
-##### å·²å®Œå–„åŠŸèƒ½ï¼šé›†æˆäº†å¾·å¡”restæœåŠ¡å™¨åšç¼“å­˜ä¸šåŠ¡ã€‚å¯springBoot å’Œ detaBoot 2é€‰1å¯åŠ¨ã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼šRESTè¯·æ±‚ã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼š200 åé¦ˆã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼š500 åé¦ˆã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼šrestMapã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼šrestForwardã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼šæ¯ç§’1500å¹¶å‘æŽ§åˆ¶ã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼šjson è¯»å†™ã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼šæ—¶é—´è®¾è®¡ã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼šå¢žåŠ ç¼“å­˜è¶…æ—¶æ›´æ–°æœºåˆ¶ã€‚
-##### å·²å®Œå–„åŠŸèƒ½ï¼šå•æœº 10ä¸‡ QPSã€‚å·²æµ‹è¯•ã€‚
+# JDKµÄ²»¶Ï¸üÐÂµ¼ÖÂhashmapµÄË÷Òý²ÉÓÃ2·Ö·¨Ë¼Ïë·¢»Óµ½¼«ÖÂ£¬ËùÒÔ±¾deta cacheµÄºóÐòÍêÉÆ½«·Å»º£¬ÐÂµÄÈÎÎñ±¾ÈË½«»ùÓÚVPCSµÄHall keeper ºÍÔËÎ¬¸üÓÐÐ§µÄ½»»¥½øÐÐÉîÈëÑÐ¾¿£¬Éè¼ÆµÄÑÐ¾¿ÏîÄ¿ÈçÏÂ
+ÐÂ¿ªÒ»¸öÓÃÓÚ»º´ævpc²¿Êð ²¢¼¯³ÉÁËµÂËþÊý¾Ý¿âÇëÇóUTIL£¬
+##### ÒÑÍêÉÆ¹¦ÄÜ£º¼¯³ÉÁËµÂËþrest·þÎñÆ÷×ö»º´æÒµÎñ¡£¿ÉspringBoot ºÍ detaBoot 2Ñ¡1Æô¶¯¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºRESTÇëÇó¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£º200 ·´À¡¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£º500 ·´À¡¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºrestMap¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºrestForward¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºÃ¿Ãë1500²¢·¢¿ØÖÆ¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºjson ¶ÁÐ´¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºÊ±¼äÉè¼Æ¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºÔö¼Ó»º´æ³¬Ê±¸üÐÂ»úÖÆ¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºµ¥»ú 10Íò QPS¡£ÒÑ²âÊÔ¡£ Mr.Luo
+##### ÒÑÍêÉÆ¹¦ÄÜ£ºString to bit 2²ÉÓÃgzip½øÖÆ¿ìËÙÑ¹Ëõ¡£ Mr.Luo
 
-##### æ­£åœ¨å®Œå–„çš„åŠŸèƒ½ï¼šString to bit 2è¿›åˆ¶å¿«é€ŸåŽ‹ç¼©ã€‚
+##### ÕýÍêÉÆ¹¦ÄÜ£ºkey ºÍvalue µÄ×î´ó³¤¶È¡£½øÐÐ¹ýÂË¡£±£Ö¤»º´æ¹¦Ð§£¬
+ 
+##### ÕýÍêÉÆ¹¦ÄÜ£ºrestPath=/getServerInfo ÔËÎ¬½Ó¿Ú ¶¨Òå   Mr.Chen
+##### ÕýÍêÉÆ¹¦ÄÜ£ºrestPath=/getServerInfo ÔËÎ¬½Ó¿Ú ½á¹¹   Mr.Chen
+##### ÕýÍêÉÆ¹¦ÄÜ£ºrestPath=/getServerInfo ÔËÎ¬½Ó¿Ú ÑÐ·¢   Mr.Chen
 
-##### æœªå®Œå–„åŠŸèƒ½ï¼šproxy cacheï¼›
-##### æœªå®Œå–„åŠŸèƒ½ï¼šmap åˆ†çº§åºåˆ—åŒ–ç´¢å¼•ã€‚
-##### æœªå®Œå–„åŠŸèƒ½ï¼šå‡†å¤‡å…¨éƒ¨å‰”é™¤springbootã€‚  
-##### æœªå®Œå–„åŠŸèƒ½ï¼šå¼•ç”¨VPCS skivvy æ¸…ç†åŠŸèƒ½ã€‚
-##### æœªå®Œå–„åŠŸèƒ½ï¼šhallkeeper adminé¡µé¢ ä¸Žè¿ç»´äº¤äº’
-##### æœªå®Œå–„åŠŸèƒ½ï¼šé…ç½®çš„å•ä¾‹ç±»
-##### æœªå®Œå–„åŠŸèƒ½ï¼šç¼–ç¨‹è§„èŒƒå¼•å…¥sonarè®¤è¯
+##### Î´ÍêÉÆ¹¦ÄÜ£ºproxy cache£»
+##### Î´ÍêÉÆ¹¦ÄÜ£ºmap ·Ö¼¶ÐòÁÐ»¯Ë÷Òý¡£
+##### Î´ÍêÉÆ¹¦ÄÜ£º×¼±¸È«²¿ÌÞ³ýspringboot¡£  
+##### Î´ÍêÉÆ¹¦ÄÜ£ºÒýÓÃVPCS skivvy ÇåÀí¹¦ÄÜ¡£
+##### Î´ÍêÉÆ¹¦ÄÜ£ºhallkeeper adminÒ³Ãæ ÓëÔËÎ¬½»»¥
+##### Î´ÍêÉÆ¹¦ÄÜ£ºÅäÖÃµÄµ¥ÀýÀà
+##### Î´ÍêÉÆ¹¦ÄÜ£º±à³Ì¹æ·¶ÒýÈësonarÈÏÖ¤
 
-##### æ–°ä»»åŠ¡ï¼šhallkeeper ç³»ç»Ÿæ—¥å¿—åˆ†çº§ç®¡ç†ã€‚
-##### æ–°ä»»åŠ¡ï¼šhallkeeper ç³»ç»Ÿæ—¥å¿—åˆ†çº§åé¦ˆã€‚
-##### æ–°ä»»åŠ¡ï¼šç¦»æ•£çš„è¿ç»´è°ƒè¯•æŽ¥å£é›†åˆã€‚
-##### æ–°ä»»åŠ¡ï¼šå¯è§†åŒ–è¿ç»´ç•Œé¢ç³»ç»Ÿï¼Œadmin å’Œdesk app
-##### æ–°ä»»åŠ¡ï¼šåŸºäºŽdeta etlçš„ å¯é‡ç”¨çš„è¿ç»´ç®¡ç†ç•Œé¢è®¾è®¡.
-##### æ–°ä»»åŠ¡ï¼šè¿ç»´æµç¨‹è¿›è¡Œå¯é€†åŒ–ç¦»æ•£æ“ä½œã€‚
+##### ÐÂÈÎÎñ£ºhallkeeper ÏµÍ³ÈÕÖ¾·Ö¼¶¹ÜÀí¡£
+##### ÐÂÈÎÎñ£ºhallkeeper ÏµÍ³ÈÕÖ¾·Ö¼¶·´À¡¡£
+##### ÐÂÈÎÎñ£ºÀëÉ¢µÄÔËÎ¬µ÷ÊÔ½Ó¿Ú¼¯ºÏ¡£
+##### ÐÂÈÎÎñ£º¿ÉÊÓ»¯ÔËÎ¬½çÃæÏµÍ³£¬admin ºÍdesk app
+##### ÐÂÈÎÎñ£º»ùÓÚdeta etlµÄ ¿ÉÖØÓÃµÄÔËÎ¬¹ÜÀí½çÃæÉè¼Æ.
+##### ÐÂÈÎÎñ£ºÔËÎ¬Á÷³Ì½øÐÐ¿ÉÄæ»¯ÀëÉ¢²Ù×÷¡£
 
 
 

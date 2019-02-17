@@ -12,7 +12,8 @@ public class TokenUtil {
 		Token token = new Token();
 		token.setuEmail(usr.getuEmail());
 		token.setuKey(key);
-		token.setuTime(new Date().getTime());
+//		token.setuTime(new Date().getTime());
+		token.setuTime(System.currentTimeMillis());
 		token.setmPassword(mPassword);
 		return token;
 	}
