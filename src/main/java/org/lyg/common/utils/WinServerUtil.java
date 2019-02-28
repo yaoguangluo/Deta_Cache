@@ -19,23 +19,6 @@ public class WinServerUtil {
 		System.out.println(getDisk());
 	}
 
-//	public static String getWinServerStatus(){
-//
-//	//	return "CpuInfo "+getCpuRatioForWindows()+", MemoryInfo "+getMemery()+", DiskInfo"+getDisk();
-//	}
-//
-//	//获取内存使用率
-//	public static String getMemery(){
-//		OperatingSystemMXBean osmxb = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
-//		// 总的物理内存+虚拟内存
-//		long totalvirtualMemory = osmxb.getTotalSwapSpaceSize();
-//		// 剩余的物理内存
-//		long freePhysicalMemorySize = osmxb.getFreePhysicalMemorySize();
-//		Double compare=(Double)(1-freePhysicalMemorySize*1.0/totalvirtualMemory)*100;
-//		String str="内存已使用:"+compare.intValue()+"%";
-//		return str;
-//	}
-
 	//获取文件系统使用率
 	public static List<String> getDisk() {
 		// 操作系统
