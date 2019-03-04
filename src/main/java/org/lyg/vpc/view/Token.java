@@ -1,8 +1,8 @@
 package org.lyg.vpc.view;
-import lombok.Getter;
-import lombok.Setter;
-@Getter
-@Setter
+//import lombok.Getter;
+//import lombok.Setter;
+//@Getter
+//@Setter
 public class Token {
     public String getuEmail() {
 		return uEmail;

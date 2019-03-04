@@ -1,9 +1,9 @@
 package org.lyg.vpc.view;
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
+//import lombok.Getter;
+//import lombok.Setter;
+//
+//@Getter
+//@Setter
 public class UsrFull {
     public Integer getuAge() {
 		return uAge;

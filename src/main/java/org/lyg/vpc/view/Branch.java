@@ -1,8 +1,9 @@
 package org.lyg.vpc.view;
-import lombok.Getter;
-import lombok.Setter;
-@Getter
-@Setter
+//import lombok.Getter;
+//
+//import lombok.Setter;
+//@Getter
+//@Setter
 public class Branch {
 	public Integer getuAge() {
 		return uAge;

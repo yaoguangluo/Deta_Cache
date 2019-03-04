@@ -8,7 +8,7 @@ import org.lyg.common.utils.OperatingSystemInfoUtil;
  *     20190301
  * */
 public class DevopsStatus {
-	public Object getServerInf(String token, String  usremail, String usrpswd) {
+	public static Object getServerInf(String token, String  usremail, String usrpswd) {
 		Map<String, Object> map = new HashMap<>();
 		map.put("showJvmInfo",  OperatingSystemInfoUtil.showJvmInfo());
 		map.put("showMemoryInfo", OperatingSystemInfoUtil.showMemoryInfo()); 

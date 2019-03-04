@@ -34,10 +34,10 @@ public class SocketThread extends Thread implements Runnable{
 			System.out.println(2);
 			String[] type = mess.split(" ");
 			System.out.println(type.length);
-//			//test type
-//			if(type.length<2){
-//				error500();
-//			}
+			//			//test type
+			//			if(type.length<2){
+			//				error500();
+			//			}
 			System.out.println(31);
 			String[] content = type[0].split("\\?");
 			System.out.println(content.length);
@@ -81,5 +81,4 @@ public class SocketThread extends Thread implements Runnable{
 	public String getSid() {
 		return this.sid;
 	}
-
 }
