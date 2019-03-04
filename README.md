@@ -3,7 +3,7 @@
 ##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：缓存服务器的运行环境所有信息采集。 Mr.Luo
 ##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：采用java.lang进行缓存服务器运维管理，具体开源实例如下：
 Mr.Zhongwei.Jian, https://blog.csdn.net/zhongweijian/article/details/7619383
-##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：集成了德塔rest服务器做缓存业务。可springBoot 和 detaBoot 2选1启动。 Mr.Luo
+##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：集成了德塔rest服务器做缓存业务。可springBoot（已经过滤但未删除，可还原） 和 detaBoot 2选1启动。 Mr.Luo
 ##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：REST请求。 Mr.Luo
 ##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：200 反馈。 Mr.Luo
 ##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：500 反馈。 Mr.Luo
@@ -27,7 +27,7 @@ Mr.Zhongwei.Jian, https://blog.csdn.net/zhongweijian/article/details/7619383
 ##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：准备全部剔除springboot。  
 ##### 未完善功能：引用VPCS skivvy 清理功能。
 ##### 未完善功能：hallkeeper admin页面 与运维交互
-##### 未完善功能：配置的单例类
+##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：配置的单例类
 ##### 未完善功能：编程规范引入sonar认证
 
 ##### 新任务：hallkeeper 系统日志分级管理。
