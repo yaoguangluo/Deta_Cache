@@ -24,7 +24,7 @@ Mr.Zhongwei.Jian, https://blog.csdn.net/zhongweijian/article/details/7619383
 
 ##### 未完善功能：proxy cache；
 ##### 未完善功能：map 分级序列化索引。
-##### 未完善功能：准备全部剔除springboot。  
+##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：准备全部剔除springboot。  
 ##### 未完善功能：引用VPCS skivvy 清理功能。
 ##### 未完善功能：hallkeeper admin页面 与运维交互
 ##### 未完善功能：配置的单例类
