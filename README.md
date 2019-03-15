@@ -1,4 +1,5 @@
-# JDK的不断更新导致hashmap的索引采用2分法思想发挥到极致，所以本deta cache的后序完善将放缓，新的任务本人将基于VPCS的Hall keeper 和运维更有效的交互进行深入研究，设计的研究项目如下。该项目的亮点为小到极致的跨平台高并发安全服务器。
+# 🔥100,000~4,000,000 QPS, tiny mini java thread safe http json cache server with concurrent map tables by using binary search technology/《VPCS架构》德塔公司开源缓存服务器 存储上亿级量子碎片，2分法字符串索引，高并发安全，超时验证。该项目已经改成协同开发模式。
+### JDK的不断更新导致hashmap的索引采用2分法思想发挥到极致，所以本deta cache的后序完善将放缓，新的任务本人将基于VPCS的Hall keeper 和运维更有效的交互进行深入研究，设计的研究项目如下。该项目的亮点为小到极致的跨平台高并发安全服务器。
 新开一个用于缓存vpc部署 并集成了德塔数据库请求UTIL，
 ##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：缓存服务器的运行环境所有信息采集。 Mr.Luo
 ##### ![实例](http://progressed.io/bar/100?title=completed)已完善功能：采用java.lang进行缓存服务器运维管理，具体开源实例如下：
