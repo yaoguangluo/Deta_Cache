@@ -23,28 +23,18 @@ public class SocketThread extends Thread implements Runnable{
 			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			String mess = br.readLine();
 			System.out.println(mess);
-			br.close();
 			if(null == mess){
 				error500();
 			}
-			System.out.println(1);
 			if(mess.equalsIgnoreCase("")){
 				error500();
 			}
-			System.out.println(2);
 			String[] type = mess.split(" ");
-			System.out.println(type.length);
-			//			//test type
-			//			if(type.length<2){
-			//				error500();
-			//			}
-			System.out.println(31);
-			String[] content = type[0].split("\\?");
+			String[] content = type[1].split("\\?");
 			System.out.println(content.length);
 			if(content.length!=2){
 				error500();
 			}
-			System.out.println(4);
 			if(content[1]==null){
 				error500();
 			}
@@ -61,7 +51,7 @@ public class SocketThread extends Thread implements Runnable{
 						socket = null;
 					}
 				}else{
-					//socket = null;
+					socket = null;
 				}
 			}
 		}
