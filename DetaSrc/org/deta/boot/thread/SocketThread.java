@@ -22,7 +22,7 @@ public class SocketThread extends Thread implements Runnable{
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			String mess = br.readLine();
-			System.out.println(mess);
+//			System.out.println(mess);
 			if(null == mess){
 				error500();
 			}
@@ -31,7 +31,7 @@ public class SocketThread extends Thread implements Runnable{
 			}
 			String[] type = mess.split(" ");
 			String[] content = type[1].split("\\?");
-			System.out.println(content.length);
+//			System.out.println(content.length);
 			if(content.length!=2){
 				error500();
 			}
